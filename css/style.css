@@ -1,0 +1,441 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic);
+
+body {
+	position: relative;
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+section {
+	width: 100%;
+}
+
+h1 {
+	font-size: 80px;
+	color: #fff;
+	text-align: center;
+	margin-top: 105px;
+}
+
+h1 img {
+	position: relative;
+}
+
+h2 {
+	font-size: 48px;
+	color: #a19b9b;
+	margin: 40px 0 40px 0;
+	text-align: center;
+}
+
+h3 {
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+	margin: auto 0;
+}
+
+hr {
+	border: none;
+	border-bottom: dashed #297899 1px;
+	width: 250px;
+}
+
+#main {
+	 /* Location of the image */
+  background-image: url(../images/hero-background.jpg);
+  -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+  /* Image is centered vertically and horizontally at all times */
+  background-position: center center;
+  
+  /* Image doesn't repeat */
+  background-repeat: no-repeat;
+  
+
+  /* This is what makes the background image rescale based on its container's size */
+  background-size: cover;
+  
+  /* Pick a solid background color that will be displayed while the background image is loading */
+  background-color:#464646;
+  
+  /* SHORTHAND CSS NOTATION
+   * background: url(background-photo.jpg) center center cover no-repeat fixed;
+   */
+   height: 750px;  
+}	
+
+
+#toggleMenu, #menuOut {
+	display: none;
+}
+
+header ul {
+	list-style: none;
+	text-align: center;
+	padding-top: 30px;
+	width:100%;
+}
+
+header ul li {
+	display: inline;
+}
+
+header ul li a {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 20px 25px;
+}
+
+header ul li a:hover {
+	background-color: #0094b4;
+}
+
+.box1 {
+	width: 100%;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}	
+
+.box1 h2 {
+	padding-bottom: 100px;
+}
+
+#about {
+	font-size: 22px;
+	color: #a19b9b;
+	padding-bottom: 60px;
+}
+
+#about a {
+	text-decoration: none;
+}
+
+.customer {
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.customer img {
+	width: 100%;
+	height: auto;
+	margin-top: 60px;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.customer h2 {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 100%;
+	color: #fff;	
+}
+
+.quotes {display: none;}
+
+.customer p {
+	position: absolute;
+	top: 200px;
+	width: 100%;
+	text-align: center;
+	line-height:7;
+	font-size: 22px;
+	color: #fff;	
+}
+
+.beach-feature {
+	position: relative;
+	padding-top: 60px;
+}
+
+.beach-feature img{
+	width: 100%;
+	height: auto;
+	margin-top: 60px; ;
+	-webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 8px 6px -6px black;
+	        box-shadow: 0 8px 6px -6px black;
+}
+
+.beach-feature h2 {
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	color: #fff;
+}
+
+.contact-info h2, .address h2 {
+	color: #309fd8;
+	margin: 20px 0 10px 0;
+}
+
+.contact-info p, .address p {
+	color: #309fd8;
+	font-size: 20px;
+	text-align: center;
+	margin: 40px 0 60px 0;
+}
+
+.contact-info a {
+	text-decoration: none;
+	margin-left: 10px;
+}
+
+.footer {
+	background-color: #309fd8;
+	text-align: center;
+	height: 80px;
+	margin-top: 30px;
+}
+
+.footer p {
+	padding-top: 30px;
+	color: #fff;
+}
+
+@media screen and (max-width: 950px){
+	
+
+	h1 {
+		position: relative;
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 32px;
+	}
+
+	#about p {
+		text-align: center;
+	}
+
+	.customer p {
+		position: absolute;
+		font-size: 14px;
+		margin-top: 30px;
+	}
+
+	.beach-feature h2 {
+		font-size: 20px;
+	}
+
+	#contact p {
+		font-size: 20px;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 64.063em){
+
+	nav ul {
+		display: none;
+	}
+
+	#toggleMenu {
+		display: block;
+		position: absolute;
+		margin: 30px;
+	}
+
+	#menuOut {
+		display: block;
+		cursor: pointer;
+		margin: 30px 0 30px 20px;
+		background: none;
+	}
+
+	header ul {
+		background: #00abd0;
+		height: 14%;
+		width:50%;
+		position: absolute;
+		top: -30px;
+		left: -20px;
+		z-index:5;
+	}
+
+	header ul li {
+		display: block !important;
+		clear: both;
+		width: 100%;
+		margin: 20px 20px;
+	}
+
+	header ul li a {
+		padding: 10px 10px;
+		font-size: 1.1em;
+	}
+
+	header ul li a:hover {
+		background: #0094b4;
+	}
+	
+	#main {
+	background: url(../images/bg-small.jpg)center center no-repeat;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+	background-size: cover;
+	}
+
+	.slick-slide img {
+		margin-top: 30px;
+	}
+
+	hr {
+		width: 100px;
+	}
+
+	.beach-feature img {
+		margin-top: -100px;
+	}
+
+	.customer p {
+		position: absolute;
+		top: 130px;
+		font-size: 12px;
+		line-height: 2;
+	}
+
+	#contact p {
+		font-size: 16px;
+	}
+
+	.address p {
+		display: block;
+	}
+}
+
+@media screen and (max-width: 40.063em){
+
+	header ul {
+		display: none;
+	}
+
+	#toggleMenu {
+		display: block;
+		margin: 15px;
+	}
+
+	h1 {
+		display: none;
+	}
+
+	section#main {
+		background-color: #309fd8;
+	}
+
+	#main {
+		background: url(../images/logo-mobile.png) center center no-repeat;
+		height: 210px;
+	}
+
+	#menuOut {
+		display: block;
+		cursor: pointer;
+		margin: 30px 0 40px 30px;
+		background: none;
+		z-index:50;
+	}
+
+	header ul {
+		background: #00abd0;
+		height: 22%;
+		width:60%;
+		position: absolute;
+		top: -30px;
+		left: -20px;
+		z-index:5;
+	}
+	
+	header ul li {
+		display: block !important;
+		clear: both;
+		width: 100%;
+	}
+
+	header ul li a {
+		padding: 20px 38px;
+	}
+
+	header ul li a:hover {
+		background: #0094b4;
+	}
+	
+	#carousel h2 {
+		display: none;
+	}
+
+	#carousel img {
+		margin-top: 15px;
+	}
+
+	.slick-slide img {
+		margin-top: 100px;
+	}
+
+	h2 {
+		font-size: 18px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	
+	#about p {
+		font-size: 16px;
+	}
+
+	.customer {
+		display: none;
+	}
+
+	.beach-feature {
+		display: none;
+	}
+
+	.contact-info h2, .address h2 {
+		margin-top: 10px;
+}
+	
+	.contact-info p, .address p {
+		font-size: 14px;
+		padding: 10px 5px 10px 5px !important;
+	}
+	
+	small {
+		font-size: 8px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
